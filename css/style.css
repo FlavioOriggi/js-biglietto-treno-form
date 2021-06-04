@@ -6,6 +6,16 @@ body{
     color: #b91450;
 }
 
+.my_border_botton{
+    border:1px solid #b91450;
+    border-radius: 5px;
+}
+
+.my_bcg_botton{
+    background-color: #cccccc;
+    padding: 0 7px;
+}
+
 .dati-biglietto{
     height: 225px;
 }

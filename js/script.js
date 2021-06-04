@@ -6,3 +6,6 @@
 //  -Categoria selezionata dall'utente
 //  -Al click su "Genera" appare la schermata con le caratteristiche del biglietto.
 //  -Al click su "Annulla" dobbiamo ripulire il form e far sparire la sezione che calcola il prezzo del biglietto.
+
+
+
