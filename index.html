@@ -25,7 +25,7 @@
                         <div class="col-1"></div>
                         <div class="col-3 pt-3 colonnasx p">
                             <h5 class="text_color_bordeaux mb-3">Nome Cognome</h5>
-                            <input class="mb-4 my_border_botton text-center" type="text" id="nome" value="Pippo">
+                            <input class="mb-4 my_border_botton text-center" type="text" id="nome" value="">
                         </div>
                         <div class="col-4 pt-3 colonnacc">                            
                             <h5 class="text_color_bordeaux mb-3">Km da percorrere</h5>
@@ -34,7 +34,7 @@
                         <div class="col-3 pt-3 colonnadx">                            
                             <h5 class="text_color_bordeaux mb-3">Fascia d'età</h5>
                             <select id="fascia-eta" class="bg-white my_border_botton  text-center">
-                                <option value="minorenne ">Minorenne</option>
+                                <option value="minorenne">Minorenne</option>
                                 <option value="maggiorenne">Maggiorenne</option>
                                 <option value="over65">Over65</option>
                             </select>                            
@@ -55,7 +55,7 @@
     </section>
 
     <!-- sezione biglietto -->
-    <section>
+    <section id="biglietto">
         <div class="container-xl">
             <div class="row flex-wrap"> 
 
@@ -72,25 +72,24 @@
                             <div class="row dati-biglietto">
                                 <div class="col-4 bg-secondary border-1 p-3">
                                     <h5 class="text-uppercase fw-bold text-dark">nome passeggero</h5>
-                                    <h4 class="text-uppercase fw-bold text-dark">nome </h4>
+                                    <h4 id="utente" class="text-uppercase fw-bold text-dark">nome </h4>
                                 </div>
                                 <div class="col-3 p-4 d-flex flex-column justify-content-between border border-secondary border-1">
                                     <h5 class="fw-bold ">Offerta</h5>
-                                    <h4>Sconto minorenne</h4>
+                                    <h4 id="offerta"></h4>
                                 </div>
                                 <div class="col-2 p-4 d-flex flex-column justify-content-between border border-secondary border-1">
                                     <h5 class="fw-bold ">Carrozza</h5>
-                                    <h4>Sconto minorenne</h4>
+                                    <h4 id="carrozza"></h4>
                                 </div>
                                 <div class="col-1 p-4 d-flex flex-column justify-content-between border border-secondary border-1">
                                     <h5 class="fw-bold ">Codice CP</h5>
-                                    <h4>Sconto minorenne</h4>
+                                    <h4 id="codice-cp"></h4>
                                 </div>
                                 <div class="col-2 p-4 d-flex flex-column justify-content-between border border-secondary border-1">
                                     <h5 class="fw-bold ">Costo biglietto</h5>
-                                    <h4>Sconto minorenne</h4>
-                                </div>
-
+                                    <h4 id="costo"></h4>
+                                </div>                                
 
                             </div>
                         </div>
