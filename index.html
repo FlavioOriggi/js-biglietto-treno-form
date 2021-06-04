@@ -16,10 +16,13 @@
     <section>
         <div class="container-xl">
             <div class="row text-center flex-wrap"> 
+
+                <!-- titolo -->
                 <div class="col-12">
                     <h2 class="text-uppercase text-white fs-1 my-5">calcola il prezzo del tuo biglietto</h2>
                 </div>
 
+                <!-- dati da inserire -->
                 <div class="col-12 bg-white rounded-3">
                     <div class="row g-4">
                         <div class="col-1"></div>
@@ -34,15 +37,16 @@
                         <div class="col-3 pt-3 colonnadx">                            
                             <h5 class="text_color_bordeaux mb-3">Fascia d'età</h5>
                             <select id="fascia-eta" class="bg-white my_border_botton  text-center">
+                                <option value="">-seleziona-</option>
                                 <option value="Minorenne">Minorenne</option>
                                 <option value="Maggiorenne">Maggiorenne</option>
                                 <option value="Over65">Over65</option>
                             </select>                            
                         </div>
                         <div class="col-1"></div>
-
                     </div>
 
+                    <!-- bottoni -->
                     <div class="row justify-content-center">
                         <div class="col-12 py-4">
                             <button id="submit" class="me-3 text_color_bordeaux my_bcg_botton rounded border-secondary fs-4 text-center">Genera</button>
@@ -55,16 +59,17 @@
     </section>
 
     <!-- sezione biglietto -->
-    <section id="biglietto">
+    <section id="biglietto" class="d-none">
         <div class="container-xl">
             <div class="row flex-wrap"> 
 
+                <!-- titolo -->
                 <div class="col-12">
                     <h2 class="text-center text-uppercase text-white fs-1 mt-5">il tuo biglietto</h2>
                 </div>
 
-                <div class="col-12 bg-white contenent-biglietto p-5">                    
-
+                <!-- sezione dati biglietto -->
+                <div class="col-12 bg-white contenent-biglietto p-5">                 
                     <div class="row">
                         <div class="col-12 bg-white">                    
                             <h4 class="text-uppercase fw-bold ">dettaglio biglietto</h4>
@@ -88,8 +93,7 @@
                                 <div class="col-2 p-4 d-flex flex-column justify-content-between border border-secondary border-1">
                                     <h5 class="fw-bold ">Costo biglietto</h5>
                                     <h4 id="costo"></h4>
-                                </div>                                
-
+                                </div>                              
                             </div>
                         </div>
                     </div>

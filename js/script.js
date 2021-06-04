@@ -14,7 +14,7 @@ var submit = document.getElementById('submit');
 
 submit.addEventListener("click", function(){
 
-    document.getElementById('biglietto').className = "show";
+    document.getElementById('biglietto').classList.remove("d-none");
     // prendiamo il nome
     var generalita = document.getElementById('nome').value;
     console.log(generalita);    
@@ -53,7 +53,7 @@ submit.addEventListener("click", function(){
 var annulla = document.getElementById('annulla');
 
 annulla.addEventListener("click", function(){
-    document.getElementById('biglietto').value = "hidden";
+    document.getElementById('biglietto').classList.add("d-none");
     document.getElementById('nome').value = "";
     document.getElementById('fascia-eta').value = "";
     document.getElementById('km').value = "";
