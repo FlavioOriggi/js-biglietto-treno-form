@@ -6,6 +6,13 @@ body{
     color: #b91450;
 }
 
+.dati-biglietto{
+    height: 225px;
+}
+
+.contenent-biglietto{
+    height: 350px;
+}
 /* .colonnasx{
     background-color: #0f5a4a;
     
