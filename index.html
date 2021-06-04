@@ -23,27 +23,28 @@
                 </div>
 
                 <!-- dati da inserire -->
-                <div class="col-12 bg-white rounded-3">
+                <div class="col-12 bg-white ombra header rounded-3">
+                    <img class="logo-upper" src="img/512px-Logo_Ferrovie_dello_Stato_Italiane.svg.png" alt="">
                     <div class="row g-4">
-                        <div class="col-1"></div>
-                        <div class="col-3 pt-3 colonnasx p">
-                            <h5 class="text_color_bordeaux mb-3">Nome Cognome</h5>
+                        <div class="col-2"></div>
+                        <div class="col-2 pt-3">
+                            <h5 class="text_color_bordeaux mb-3">Nome & Cognome</h5>
                             <input class="mb-4 my_border_botton text-center" type="text" id="nome" value="">
                         </div>
-                        <div class="col-4 pt-3 colonnacc">                            
+                        <div class="col-4 pt-3">                            
                             <h5 class="text_color_bordeaux mb-3">Km da percorrere</h5>
-                            <input class="mb-4 my_border_botton  text-center" type="number" id="km">                            
+                            <input class="mb-4 my_border_botton  text-center" type="number" id="km" value="0">                            
                         </div>
-                        <div class="col-3 pt-3 colonnadx">                            
+                        <div class="col-2 pt-3">                            
                             <h5 class="text_color_bordeaux mb-3">Fascia d'età</h5>
-                            <select id="fascia-eta" class="bg-white my_border_botton  text-center">
+                            <select id="fascia-eta" class="bg-white my_border_botton  text-center px-2">
                                 <option value="seleziona">-seleziona-</option>
-                                <option value="Minorenne">Minorenne</option>
-                                <option value="Maggiorenne">Maggiorenne</option>
-                                <option value="Over65">Over65</option>
+                                <option value="Minorenne (sconto del 20%)">Minorenne</option>
+                                <option value="Prezzo standard">Maggiorenne</option>
+                                <option value="Over65 (sconto del 40%)">Over65</option>
                             </select>                            
                         </div>
-                        <div class="col-1"></div>
+                        <div class="col-2"></div>
                     </div>
 
                     <!-- bottoni -->
@@ -59,7 +60,7 @@
     </section>
 
     <!-- sezione biglietto -->
-    <section id="biglietto" class="d-none">
+    <section id="biglietto" class="">
         <div class="container-xl">
             <div class="row flex-wrap"> 
 
@@ -68,15 +69,18 @@
                     <h2 class="text-center text-uppercase text-white fs-1 mt-5">il tuo biglietto</h2>
                 </div>
 
-                <!-- sezione dati biglietto -->
+                <!-- sezione dati -->
                 <div class="col-12 bg-white contenent-biglietto p-5">                 
                     <div class="row">
                         <div class="col-12 bg-white">                    
                             <h4 class="text-uppercase fw-bold ">dettaglio biglietto</h4>
                             <div class="row dati-biglietto pb-3">
-                                <div class="col-4 bg-secondary border-1 p-3">
-                                    <h5 class="text-uppercase fw-bold text-dark mb-2">nome passeggero</h5>
-                                    <h4 id="utente" class="fw-bold text-dark"> </h4>
+                                <div class="col-3 bg-secondary border-1 p-4">
+                                    <h5 class="text-uppercase fw-bold text-dark">nome passeggero</h5>
+                                    <h4 id="utente" class="m-3 fw-bold text-dark "> </h4>
+                                </div>
+                                <div class="col-1 d-flex align-items-center bg-secondary border-1 p-3">
+                                    <img class="logo-down"src="img/logo_TIT.png" alt="">
                                 </div>
                                 <div class="col-3 p-4 d-flex flex-column justify-content-between border border-secondary border-1">
                                     <h5 class="fw-bold ">Offerta</h5>

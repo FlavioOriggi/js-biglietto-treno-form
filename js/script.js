@@ -14,23 +14,43 @@ var submit = document.getElementById('submit');
 
 submit.addEventListener("click", function(){
 
+    // ho scritto cosi in modo che se, una volta calcolato il costo l'utente vada a mettere 
+    // ZERO come valore nei km o tolga il nome o la fascia d'età, la schermata dele biglietto si chiuda 
+
     // prendiamo il nome
-    var generalita = document.getElementById('nome').value;        
+    var generalita = document.getElementById('nome').value;  
+    if ((generalita == "") || (generalita == "undefined")) {
+        alert("Il campo nome è obbligatorio."); 
+        document.getElementById('biglietto').classList.add("d-none");                
+        return false;
+    }      
 
     // prendiamo i km
     var km = document.getElementById('km').value;
-    var prezzo = km * 0.21;   
-
+    var prezzo = km * 0.21; 
+    if ((km == "") || (km == "undefined")) {
+        alert("Il campo Km è obbligatorio.");  
+        document.getElementById('biglietto').classList.add("d-none");                 
+        return false;                  
+    } else if (km == 0){
+        alert("Mettere una quantità superiore a zero");  
+        document.getElementById('biglietto').classList.add("d-none");                  
+        return false;        
+    }
+      
     // condizione fascia eta
-    var fascia = document.getElementById('fascia-eta').value;
-     
+    var fascia = document.getElementById('fascia-eta').value;     
 
-    if(fascia == 'Minorenne'){
+    if(fascia == 'Minorenne (sconto del 20%)'){
         prezzo = (prezzo - (prezzo / 100 * 20)).toFixed(2); 
         document.getElementById('biglietto').classList.remove("d-none");       
     }
 
-    if (fascia == 'Over65'){
+    if(fascia == 'Prezzo standard'){        
+        document.getElementById('biglietto').classList.remove("d-none");       
+    }
+
+    if (fascia == 'Over65 (sconto del 40%)'){
         prezzo = (prezzo - (prezzo / 100 * 40)).toFixed(2);  
         document.getElementById('biglietto').classList.remove("d-none");      
     } 

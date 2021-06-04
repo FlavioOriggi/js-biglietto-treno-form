@@ -6,6 +6,18 @@ body{
     color: #b91450;
 }
 
+ 
+
+.ombra{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+.logo-upper{
+    width: 10%;
+    padding-top: 20px;
+}
+
+
 .my_border_botton{
     border:1px solid #b91450;
     border-radius: 5px;
@@ -22,4 +34,8 @@ body{
 
 .contenent-biglietto{
     height: 100%;
+}
+
+.logo-down{
+    width: 100%;
 }
