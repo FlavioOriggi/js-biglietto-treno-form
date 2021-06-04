@@ -72,9 +72,9 @@ submit.addEventListener("click", function(){
     for (var i=0; i<n; i++){
         letterDellaFila = letterList.charAt(Math.floor(Math.random() * letterList.length));
     }   
-    
+
     // codice Cp 
-    var codiceCp = Math.floor(Math.random() * (100000 - 90000 +1)) + 90000;
+    var codiceCp = Math.floor(Math.random() * (99998 - 90000 +1)) + 90000;
     
     // output
     document.getElementById('offerta').innerHTML = fascia;    
