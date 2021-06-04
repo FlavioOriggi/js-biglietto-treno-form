@@ -14,36 +14,35 @@ var submit = document.getElementById('submit');
 
 submit.addEventListener("click", function(){
 
-    document.getElementById('biglietto').classList.remove("d-none");
     // prendiamo il nome
-    var generalita = document.getElementById('nome').value;
-    console.log(generalita);    
+    var generalita = document.getElementById('nome').value;        
 
     // prendiamo i km
     var km = document.getElementById('km').value;
-    var prezzo = km * 0.21;
-    console.log(prezzo);
+    var prezzo = km * 0.21;   
 
     // condizione fascia eta
     var fascia = document.getElementById('fascia-eta').value;
-    console.log(fascia);    
+     
 
     if(fascia == 'Minorenne'){
-        prezzo = (prezzo - (prezzo / 100 * 20)).toFixed(2);        
+        prezzo = (prezzo - (prezzo / 100 * 20)).toFixed(2); 
+        document.getElementById('biglietto').classList.remove("d-none");       
     }
 
     if (fascia == 'Over65'){
-        prezzo = (prezzo - (prezzo / 100 * 40)).toFixed(2);        
+        prezzo = (prezzo - (prezzo / 100 * 40)).toFixed(2);  
+        document.getElementById('biglietto').classList.remove("d-none");      
     } 
     
     if(fascia == 'seleziona'){
         alert("Seleziona la fascia di età"); 
-           
-    }
+        document.getElementById('biglietto').classList.add("d-none");                  
+    }   
+
 
     // carrozza e codice Cp devono poi essere calcolati random
     var carrozza = Math.round(Math.random()*8)+1;
-
     var codiceCp = Math.floor(Math.random() * (100000 - 90000 +1)) + 90000;
 
     // output
