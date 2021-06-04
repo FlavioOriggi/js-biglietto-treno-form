@@ -31,8 +31,14 @@ submit.addEventListener("click", function(){
     if(fascia == 'Minorenne'){
         prezzo = (prezzo - (prezzo / 100 * 20)).toFixed(2);        
     }
+
     if (fascia == 'Over65'){
         prezzo = (prezzo - (prezzo / 100 * 40)).toFixed(2);        
+    } 
+    
+    if(fascia == 'seleziona'){
+        alert("Seleziona la fascia di età"); 
+           
     }
 
     // carrozza e codice Cp devono poi essere calcolati random
@@ -50,7 +56,6 @@ submit.addEventListener("click", function(){
 
 // button reset
 var annulla = document.getElementById('annulla');
-
 annulla.addEventListener("click", function(){
     document.getElementById('biglietto').classList.add("d-none");
     document.getElementById('nome').value = "";
