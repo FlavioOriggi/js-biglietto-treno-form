@@ -2,13 +2,6 @@ body{
     background-color: #b91450;
 }
 
-.show{
-    display: block;
-}
-
-.hidden{
-    display: none;
-}
 
 .text_color_bordeaux{
     color: #b91450;
@@ -31,18 +24,3 @@ body{
 .contenent-biglietto{
     height: 100%;
 }
-
-/* .colonnasx{
-    background-color: #0f5a4a;
-    
-}
-
-.colonnacc{
-    background-color: #148ab9;
-    
-}
-
-.colonnadx{
-    background-color: #d33e3e;
-    
-} */

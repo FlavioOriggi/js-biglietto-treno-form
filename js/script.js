@@ -30,10 +30,9 @@ submit.addEventListener("click", function(){
 
     if(fascia == 'Minorenne'){
         prezzo = (prezzo - (prezzo / 100 * 20)).toFixed(2);        
-    } else if (fascia == 'Over65'){
+    }
+    if (fascia == 'Over65'){
         prezzo = (prezzo - (prezzo / 100 * 40)).toFixed(2);        
-    } else{
-        prezzo
     }
 
     // carrozza e codice Cp devono poi essere calcolati random
