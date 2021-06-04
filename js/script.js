@@ -61,16 +61,28 @@ submit.addEventListener("click", function(){
     }   
 
 
-    // carrozza e codice Cp devono poi essere calcolati random
+    // codice carrozza 
     var carrozza = Math.round(Math.random()*8)+1;
-    var codiceCp = Math.floor(Math.random() * (100000 - 90000 +1)) + 90000;
 
+    // codice poltrona
+    var numeroPoltrona = Math.round(Math.random()*3)+1; // messo 3 per avere massimo 4posti (tipo quelli col tavolo in comune) 
+    
+    const n=1;    
+    var letterList = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    for (var i=0; i<n; i++){
+        letterDellaFila = letterList.charAt(Math.floor(Math.random() * letterList.length));
+    }   
+    // codice Cp 
+    var codiceCp = Math.floor(Math.random() * (100000 - 90000 +1)) + 90000;
+    
     // output
     document.getElementById('offerta').innerHTML = fascia;    
     document.getElementById('carrozza').innerHTML = 'n° ' + carrozza;
+    document.getElementById('poltrona').innerHTML = numeroPoltrona+letterDellaFila;
     document.getElementById('codice-cp').innerHTML = codiceCp;
     document.getElementById('costo').innerHTML = prezzo +' €';
     document.getElementById('utente').innerHTML = generalita;
+
 });
 
 // button reset

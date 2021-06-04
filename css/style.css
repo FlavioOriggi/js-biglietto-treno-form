@@ -1,12 +1,10 @@
-body{
-    background-color: #b91450;
+body{    
+    background-color: #c8c8c8;
 }
 
 .text_color_bordeaux{
     color: #b91450;
 }
-
- 
 
 .ombra{
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
@@ -16,7 +14,6 @@ body{
     width: 10%;
     padding-top: 20px;
 }
-
 
 .my_border_botton{
     border:1px solid #b91450;
