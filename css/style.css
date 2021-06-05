@@ -1,38 +1,55 @@
 body{
     background-color: #b91450;   
 }
-
 .text_color_bordeaux{
     color: #b91450;
 } 
 
-.ombra{
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+/* —————————————— sezione calcolatore —————————————— */
+.ombra{   
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);    
 }
-
 .logo-upper{
     width: 10%;
     padding-top: 20px;
 }
 
-.my_border_botton{
-    border:1px solid #b91450;
+/* tag input */
+.my_border_input{
+    border: 2px solid #b91450;
     border-radius: 5px;
 }
 
+/* sezione bottoni */
+.my_border_botton{
+    border-radius: 5px;
+}
 .my_bcg_botton{
     background-color: #cccccc;
+    border: 2px solid #909090;
     padding: 0 7px;
 }
-
-.dati-biglietto{
-    height: 100%;
+.my_bcg_botton:hover {
+    border: 2px solid #b91450; 
 }
 
+/* ——————— sezione biglietto ———————— */
 .contenent-biglietto{
     height: 100%;
 }
-
 .logo-down{
     width: 100%;
+}
+.banner-biglietto{
+    background-image: url('../img/banner-italy2.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border:2x solid lightgray;
+    height: 100%;
+}
+.my_pl_50{
+    padding-left: 50px;
+}
+.my_pl_90{
+    padding-left: 90px;
 }

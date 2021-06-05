@@ -29,15 +29,15 @@
                         <div class="col-2"></div>
                         <div class="col-3 pt-3">
                             <h5 class="text_color_bordeaux mb-3 ">Nome Cognome</h5>
-                            <input class="mb-4 my_border_botton text-center" type="text" id="nome" value="">
+                            <input class="mb-4 my_border_input text-center" type="text" id="nome" value="">
                         </div>                        
                         <div class="col-2 pt-3">                            
                             <h5 class="text_color_bordeaux mb-3">Km da percorrere</h5>
-                            <input class="mb-4 my_border_botton  text-center" type="number" id="km" value="0">                            
+                            <input class="mb-4 my_border_input  text-center" type="number" id="km" value="0">                            
                         </div>
                         <div class="col-3 pt-3">                            
                             <h5 class="text_color_bordeaux mb-3">Fascia d'età</h5>
-                            <select id="fascia-eta" class="bg-white my_border_botton  text-center px-2">
+                            <select id="fascia-eta" class="bg-white my_border_input  text-center px-2">
                                 <option value="seleziona">-seleziona-</option>
                                 <option value="Minorenne (sconto del 20%)">Minorenne</option>
                                 <option value="Prezzo standard">Maggiorenne</option>
@@ -50,8 +50,8 @@
                     <!-- bottoni -->
                     <div class="row justify-content-center">
                         <div class="col-12 py-4">
-                            <button id="submit" class="me-3 text_color_bordeaux my_bcg_botton rounded border-secondary fs-4 text-center">Genera</button>
-                            <button id="annulla" class="ms-3 text_color_bordeaux my_bcg_botton rounded border-secondary fs-4 text-center">Annulla</button>
+                            <button id="submit" class="me-3 text_color_bordeaux my_bcg_botton rounded  fs-4 text-center">Genera</button>
+                            <button id="annulla" class="ms-3 text_color_bordeaux my_bcg_botton rounded  fs-4 text-center">Annulla</button>
                         </div>
                     </div>
                 </div>
@@ -70,11 +70,13 @@
                 </div>
 
                 <!-- sezione dati -->
-                <div class="col-12 bg-white contenent-biglietto p-5">                 
+                <div class="col-12 bg-white contenent-biglietto px-5 pt-5 pb-2">                 
                     <div class="row">
                         <div class="col-12 bg-white">                    
                             <h4 class="text-uppercase fw-bold ">dettaglio biglietto</h4>
-                            <div class="row dati-biglietto pb-3">
+
+                            <!-- recap dati personali -->
+                            <div class="row dati-biglietto mb-4">
                                 <div class="col-3 bg-secondary border-1 p-4">
                                     <h5 class="text-uppercase fw-bold text-dark">nome passeggero</h5>
                                     <h4 id="utente" class="m-3 fw-bold text-dark "> </h4>
@@ -95,13 +97,41 @@
                                     <h4 id="poltrona"></h4>
                                 </div>
                                 <div class="col-1 p-4 d-flex flex-column justify-content-between border border-secondary border-1">
-                                    <h5 class="fw-bold ">Codice CP</h5>
+                                    <h5 class="fw-bold mb-5">Codice CP</h5>
                                     <h4 id="codice-cp"></h4>
                                 </div>
                                 <div class="col-2 p-4 d-flex flex-column justify-content-between border border-secondary border-1">
                                     <h5 class="fw-bold ">Costo biglietto</h5>
                                     <h4 id="costo"></h4>
                                 </div>                              
+                            </div>
+
+                            <!-- dettagli del viaggio --> <!--preso spunto da questa img: https://i.ebayimg.com/images/g/2EIAAOSw0Kle8I~j/s-l1600.jpg -->
+                            <div class="row">
+                                <div class="col-12 banner-biglietto mb-3">
+                                    <div class="row flex-wrap p-3">
+                                        
+                                        <div class="col-4 text-white pt-3 my_pl_50">
+                                            <h5>Stazione di partenza</h5>
+                                            <h4 class="fw-bold">Roma Termini</h4>
+                                            <h4>Ore <span class="fw-bold">16:57 - 05/06/2021</span></h4>
+                                        </div>
+                                                   
+                                        <div class="col-1"></div>                                         
+                                        <div class="col-3 pt-3 ">
+                                            <h5>Stazione di arrivo</h5>
+                                            <h4 class="fw-bold">Milano Centrale</h4>
+                                            <h4>Ore <span class="fw-bold">23:57 - 05/06/2021</span></h4>
+                                        </div>
+                                        
+                                        <div class="col-4 text-white my_pl_90">
+                                            <h5>Treno: <span class="fw-bold">Frecciarossa 35618</span></h5>
+                                            <h5>Offerta: <span id="offertabiglietto" class="fw-bold"></span></h5>
+                                            <h5>Carrozza: <span id="carrozzabiglietto" class="fw-bold"></span></h5>
+                                            <h5>Poltrona: <span id="poltronabiglietto" class="fw-bold"></span></h5>                                            
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

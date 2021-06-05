@@ -76,13 +76,19 @@ submit.addEventListener("click", function(){
     // codice Cp 
     var codiceCp = Math.floor(Math.random() * (99998 - 90000 +1)) + 90000;
     
-    // output
+    // output dettaglio biglietto
     document.getElementById('offerta').innerHTML = fascia;    
-    document.getElementById('carrozza').innerHTML = 'n° ' + carrozza;
+    document.getElementById('carrozza').innerHTML = carrozza;
     document.getElementById('poltrona').innerHTML = numeroPoltrona+letterDellaFila;
     document.getElementById('codice-cp').innerHTML = codiceCp;
     document.getElementById('costo').innerHTML = prezzo +' €';
     document.getElementById('utente').innerHTML = generalita;
+
+    // output grafica biglietto
+    document.getElementById('offertabiglietto').innerHTML = fascia;    
+    document.getElementById('carrozzabiglietto').innerHTML = carrozza;
+    document.getElementById('poltronabiglietto').innerHTML = numeroPoltrona+letterDellaFila;
+    
 
 });
 
